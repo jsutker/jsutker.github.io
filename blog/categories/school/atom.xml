@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: School | Joe Sutker's Blog]]></title>
+  <title><![CDATA[Category: school | Joe Sutker's Blog]]></title>
   <link href="http://jsutker.github.io/blog/categories/school/atom.xml" rel="self"/>
   <link href="http://jsutker.github.io/"/>
-  <updated>2015-06-09T10:34:22-04:00</updated>
+  <updated>2015-06-09T10:36:02-04:00</updated>
   <id>http://jsutker.github.io/</id>
   <author>
     <name><![CDATA[Joseph Sutker]]></name>
