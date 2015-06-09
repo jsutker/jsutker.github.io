@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Flatiron | Joe Sutker's Blog]]></title>
+  <link href="http://jsutker.github.io/blog/categories/flatiron/atom.xml" rel="self"/>
+  <link href="http://jsutker.github.io/"/>
+  <updated>2015-06-09T10:29:21-04:00</updated>
+  <id>http://jsutker.github.io/</id>
+  <author>
+    <name><![CDATA[Joseph Sutker]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Variable Scope: An Analogy]]></title>
+    <link href="http://jsutker.github.io/blog/2015/06/09/variable-scope-an-analogy/"/>
+    <updated>2015-06-09T08:39:10-04:00</updated>
+    <id>http://jsutker.github.io/blog/2015/06/09/variable-scope-an-analogy</id>
+    <content type="html"><![CDATA[<p>During a lecture, there was a discussion on variable scope, which sparked an idea for an analogy. Picture this:</p>
+
+<p>Welcome to Rubyland, land of many things. In Rubyland, there are castles (methods) and there are pits (blocks). Whenever a knight (variable) comes into being, he is given a weapon (value), tied down to where he was created by a giant rope.</p>
+
+<p>Let&rsquo;s create a knight outside of all of the castles and pits, in the main part of Rubyland. We&rsquo;ll call him sir_variable. Our knight, sir_variable, can&rsquo;t get over the walls of the castle, so nobody there knows he exists (but none of the knights from the castle can get out either, so it&rsquo;s fair). He could easily jump into pits, exchange his sword for a handy new battleaxe if he so pleases, and climb up his rope right out.</p>
+
+<p>Now let&rsquo;s create another knight, sir_reference. He was created in a pit, where he&rsquo;s been fighting hashes and going on quests. No matter what, he doesn&rsquo;t have a rope to climb that could bring him up and out of the pit, because his rope is all in the pit.</p>
+
+<p>And that is how variable scope works. So remember kids, always keep your variables in scope, or you might find yourself in a battle without a weapon.</p>
+]]></content>
+  </entry>
+  
+</feed>
