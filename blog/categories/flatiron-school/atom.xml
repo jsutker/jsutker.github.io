@@ -4,7 +4,7 @@
   <title><![CDATA[Category: flatiron-school | Joe Sutker's Blog]]></title>
   <link href="http://jsutker.github.io/blog/categories/flatiron-school/atom.xml" rel="self"/>
   <link href="http://jsutker.github.io/"/>
-  <updated>2015-06-09T11:07:52-04:00</updated>
+  <updated>2015-06-15T10:39:24-04:00</updated>
   <id>http://jsutker.github.io/</id>
   <author>
     <name><![CDATA[Joseph Sutker]]></name>
@@ -12,6 +12,95 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Awesome Operators are Awesome]]></title>
+    <link href="http://jsutker.github.io/blog/2015/06/15/%7C%7C-awesome-operators-are-awesome/"/>
+    <updated>2015-06-15T09:00:00-04:00</updated>
+    <id>http://jsutker.github.io/blog/2015/06/15/||-awesome-operators-are-awesome</id>
+    <content type="html"><![CDATA[<h1>||=</h1>
+
+<p>Or-equals, pipe-pipe-equals, double-pipe-equals, whatever you want to call it, this thing is awesome. Let me tell you why.</p>
+
+<h3>Why It&rsquo;s Awesome:</h3>
+
+<p>Let&rsquo;s say you&rsquo;re writing some code. It&rsquo;s some pretty damn good code, but you have this variable that might be set to something, it might not. What&rsquo;re you gonna do? You&rsquo;re gonna use ||=, that&rsquo;s what.</p>
+
+<pre><code class="ruby">if 2 &gt; 3
+  puts "You get to input something!"
+  statement = gets.chomp
+else
+  puts "You don't get to input anything!"
+end
+statement ||= "This is a default statement."
+statement
+#=&gt; "This is a default statement."
+</code></pre>
+
+<p>Wasn&rsquo;t that awesome? You&rsquo;re damn right it was awesome.</p>
+
+<hr />
+
+<h1>defined?</h1>
+
+<p>This one is simple, it&rsquo;s called &ldquo;defined?&rdquo;. No ambiguity there. I bet you can guess what it does.</p>
+
+<h3>Why It&rsquo;s Awesome:</h3>
+
+<p>Just in case you weren&rsquo;t convinced by ||=, this bad boy checks if your variable is defined. If not, it doesn&rsquo;t throw a hissy-fit, it&rsquo;s just like &ldquo;Nah man, this thing doesn&rsquo;t exist, so I&rsquo;m gonna throw you a nil.&rdquo; It&rsquo;s a bro.</p>
+
+<pre><code class="ruby">example1 = 7
+def example2
+end
+$example3 = true
+defined? example1 #=&gt; "local-variable"
+defined? example2 #=&gt; "method"
+defined? $example3 #=&gt; "global-variable"
+defined? example4 #=&gt; nil
+</code></pre>
+
+<p>That was pretty awesome. But that&rsquo;s not all it can do. You can use it in a method as well.</p>
+
+<pre><code class="ruby">def example5
+  defined? yield
+end
+class example6
+  include Enumerable
+  def count
+    defined? super
+  end
+end
+example5 {|a| a} #=&gt; "yield"
+example6.count #=&gt; "super"
+</code></pre>
+
+<p>That was pretty damn awesome.</p>
+
+<hr />
+
+<h1>&lt;=></h1>
+
+<p>This is our last awesome operator for this post. It looks like the intense hybrid of less-than-or-equal-to, greater-than-or-equal-to, and a TIE Fighter. That in and of itself is awesome, but it gets better.</p>
+
+<h3>Why It&rsquo;s Awesome:</h3>
+
+<p>So which comparison do we want to use for two different pieces of data, less-than, equals, or greater-than? Yes.</p>
+
+<pre><code class="ruby">a = 2
+b = 1
+a &lt;=&gt; b #=&gt; -1
+b &lt;=&gt; a #=&gt; 1
+a &lt;=&gt; a #=&gt; 0
+</code></pre>
+
+<p>See that? If the first one&rsquo;s bigger, it gives you -1. If the second one&rsquo;s bigger, it gives you 1. They&rsquo;re the same? You get 0, because of course you do.</p>
+
+<hr />
+
+<p>Are these operators awesome? Yes.
+Am I overreacting to how awesome they are? Probably.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Variable Scope: An Analogy]]></title>
