@@ -4,7 +4,7 @@
   <title><![CDATA[Joe Sutker's Blog]]></title>
   <link href="http://jsutker.github.io/atom.xml" rel="self"/>
   <link href="http://jsutker.github.io/"/>
-  <updated>2015-07-20T08:42:15-04:00</updated>
+  <updated>2015-07-20T08:44:49-04:00</updated>
   <id>http://jsutker.github.io/</id>
   <author>
     <name><![CDATA[Joseph Sutker]]></name>
@@ -140,7 +140,7 @@ For example, this GolfScript code prints 1000 digits of pi (source: Wikipedia):<
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>As a final touch, let&rsquo;s replace the === with ==, since we know that both n and 0 are both integers, so we don&rsquo;t care about type comparison:</p>
+<p>As a final touch, let&rsquo;s replace the === with ==, since we know that both n and 0 are integers, so we don&rsquo;t care about type comparison:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="s1">&#39;use strict&#39;</span><span class="p">;</span><span class="kd">var</span> <span class="nx">fizzbuzz</span><span class="o">=</span><span class="kd">function</span><span class="p">(</span><span class="nx">n</span><span class="p">){</span><span class="kd">var</span> <span class="nx">a</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">;</span><span class="k">if</span><span class="p">(</span><span class="nx">n</span><span class="o">%</span><span class="mi">3</span><span class="o">==</span><span class="mi">0</span><span class="p">){</span><span class="nx">a</span><span class="o">+=</span><span class="s2">&quot;Fizz&quot;</span><span class="p">}</span><span class="k">if</span><span class="p">(</span><span class="nx">n</span><span class="o">%</span><span class="mi">5</span><span class="o">==</span><span class="mi">0</span><span class="p">){</span><span class="nx">a</span><span class="o">+=</span><span class="s2">&quot;Buzz&quot;</span><span class="p">}</span><span class="k">return</span> <span class="nx">a</span><span class="o">||</span><span class="nx">n</span><span class="p">}</span>
