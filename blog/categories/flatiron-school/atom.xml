@@ -4,7 +4,7 @@
   <title><![CDATA[Category: flatiron-school | Joe Sutker's Blog]]></title>
   <link href="http://jsutker.github.io/blog/categories/flatiron-school/atom.xml" rel="self"/>
   <link href="http://jsutker.github.io/"/>
-  <updated>2015-07-20T08:03:47-04:00</updated>
+  <updated>2015-07-20T08:05:44-04:00</updated>
   <id>http://jsutker.github.io/</id>
   <author>
     <name><![CDATA[Joseph Sutker]]></name>
@@ -12,6 +12,107 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fore!!! How to Code Golf, As Told By an Amateur]]></title>
+    <link href="http://jsutker.github.io/blog/2015/07/16/fore-how-to-code-golf/"/>
+    <updated>2015-07-16T11:00:20-04:00</updated>
+    <id>http://jsutker.github.io/blog/2015/07/16/fore-how-to-code-golf</id>
+    <content type="html"><![CDATA[<p>Code Golf is not teaching a robot to get angry while swinging an expensive piece of metal at a little, white ball. It&rsquo;s trying to use as few bytes to get an intended outcome. There are certain languages that are built for Code Golf (taking very few bytes to get things done), like GolfScript or Flogscript, but they look absolutely ridiculous.
+For example, this GolfScript code prints 1000 digits of pi (source: Wikipedia):
+<code>GolfScript
+;''
+6666,-2%{2+.2/@*\/10.3??2*+}*
+`50&lt;~\; #truncate for webpage purposes
+ -&gt; 3141592653589793238462643383279502884197169399375
+</code>
+Seriously, how frustrating does that look? Very much so, in my opinion. I prefer Code Golfing with easy to read languages so that programmers can read the lyte code.</p>
+
+<p>&nbsp;</p>
+
+
+<div width="50%" align="center"><img src="http://kenstonlocal.org/kenston/wp-content/uploads/2014/12/css_code.jpg" title="For some reason, a lot of the pictures of code that I could find were CSS. I think that says something about the average person's perception of code, but I'm not sure what." width="50%"></div>
+
+
+<h5 align="center">Get it? Lyte, as in a mixture of byte and lite? No? Screw it.</h5>
+
+
+<p>Ok, let&rsquo;s get golfing. We&rsquo;re going to use FizzBuzz as our example. If you don&rsquo;t know what FizzBuzz is, it&rsquo;s a program that you give an integer as input. If the integer is divisible by 3, it returns &ldquo;Fizz&rdquo;, if it&rsquo;s divisible by 5, it returns &ldquo;Buzz&rdquo;, and if it&rsquo;s divisible by both, it returns &ldquo;FizzBuzz&rdquo;. In our version, it returns the original number if it&rsquo;s divisible by neither.</p>
+
+<p>And let&rsquo;s code it in JavaScript. Why? Because I want to, that&rsquo;s why. Here&rsquo;s a version of FizzBuzz I&rsquo;ve already coded, and it looks nicely coded, but horrible for code golf:</p>
+
+<pre><code class="javascript">'use strict';
+var fizzbuzz = function(n) {
+    var a = '';
+    if (n % 3 === 0) {
+        a += "Fizz";
+    };
+    if (n % 5 === 0) {
+        a += "Buzz";
+    };
+    if (a) {
+        return a
+    } else {
+        return n
+    };
+};
+</code></pre>
+
+<p>And now we look for a few places where it can be shortened. For example, that last if-else statement looks like a good place for a ternary operator:</p>
+
+<pre><code class="javascript">'use strict';
+var fizzbuzz = function(n) {
+    var a = '';
+    if (n % 3 === 0) {
+        a += "Fizz";
+    };
+    if (n % 5 === 0) {
+        a += "Buzz";
+    };
+    return a ? a : n
+};
+</code></pre>
+
+<p>Actually, there&rsquo;s a nifty thing in JavaScript, where you can just do &ldquo;||&rdquo; instead if the first part of the ternary operator is the same as the second part:</p>
+
+<pre><code class="javascript">'use strict';
+var fizzbuzz = function(n) {
+    var a = '';
+    if (n % 3 === 0) {
+        a += "Fizz";
+    };
+    if (n % 5 === 0) {
+        a += "Buzz";
+    };
+    return a || n
+};
+</code></pre>
+
+<p>And now let&rsquo;s get rid of all of those pesky unnecessary semicolons, spaces, and newline characters:</p>
+
+<pre><code class="javascript">'use strict';var fizzbuzz=function(n){var a='';if(n%3===0){a+="Fizz"}if(n%5===0){a+="Buzz"}return a||n}
+</code></pre>
+
+<p>As a final touch, let&rsquo;s replace the === with ==, since we know that both n and 0 are both integers, so we don&rsquo;t care about type comparison:</p>
+
+<pre><code class="javascript">'use strict';var fizzbuzz=function(n){var a='';if(n%3==0){a+="Fizz"}if(n%5==0){a+="Buzz"}return a||n}
+</code></pre>
+
+<p>And let&rsquo;s rename our function to &ldquo;f&rdquo;, while we&rsquo;re at it:</p>
+
+<pre><code class="javascript">'use strict';var f=function(n){var a='';if(n%3==0){a+="Fizz"}if(n%5==0){a+="Buzz"}return a||n}
+</code></pre>
+
+<p>Tada! We&rsquo;re down to 94 bytes! Awesome! This is as much as I&rsquo;ve figured out how to code golf, while still using moderately proper code (using and enforcing local variables only, instead of just using global variables is a big part of that).</p>
+
+<p>One last thing to remember while Code Golfing: Even though you may love your function, there could still be others that can inherently out-golf you:</p>
+
+<pre><code class="javascript">'use strict';var f=function(n){var a=!(n%3),b=!(n%5);return a?b?"FizzBuzz":"Fizz":b?"Buzz":n}
+</code></pre>
+
+<p>&hellip; 93 bytes. F***.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How Not to Write a Blog Post]]></title>
