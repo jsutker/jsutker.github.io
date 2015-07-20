@@ -4,7 +4,7 @@
   <title><![CDATA[Joe Sutker's Blog]]></title>
   <link href="http://jsutker.github.io/atom.xml" rel="self"/>
   <link href="http://jsutker.github.io/"/>
-  <updated>2015-07-20T08:47:41-04:00</updated>
+  <updated>2015-07-20T08:48:46-04:00</updated>
   <id>http://jsutker.github.io/</id>
   <author>
     <name><![CDATA[Joseph Sutker]]></name>
@@ -18,7 +18,7 @@
     <link href="http://jsutker.github.io/blog/2015/07/16/fore-an-amateur-code-golf-example/"/>
     <updated>2015-07-16T11:00:20-04:00</updated>
     <id>http://jsutker.github.io/blog/2015/07/16/fore-an-amateur-code-golf-example</id>
-    <content type="html"><![CDATA[<p>Code Golf is not teaching a robot to get angry while swinging an expensive piece of metal at a little, white ball. It&rsquo;s trying to use as few bytes to get an intended outcome. There are certain languages that are built for Code Golf (taking very few bytes to get things done), like GolfScript or Flogscript, but they look absolutely ridiculous.
+    <content type="html"><![CDATA[<p>Code Golf is not teaching a robot to get angry while swinging an expensive piece of metal at a little, white ball. It&rsquo;s trying to use as few bytes as possible to get an intended outcome. There are certain languages that are built for Code Golf (taking very few bytes to get things done), like GolfScript or Flogscript, but they look absolutely ridiculous.
 For example, this GolfScript code prints 1000 digits of pi (source: Wikipedia):</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
