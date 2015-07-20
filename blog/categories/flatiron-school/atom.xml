@@ -4,7 +4,7 @@
   <title><![CDATA[Category: flatiron-school | Joe Sutker's Blog]]></title>
   <link href="http://jsutker.github.io/blog/categories/flatiron-school/atom.xml" rel="self"/>
   <link href="http://jsutker.github.io/"/>
-  <updated>2015-07-20T08:48:46-04:00</updated>
+  <updated>2015-07-20T08:50:11-04:00</updated>
   <id>http://jsutker.github.io/</id>
   <author>
     <name><![CDATA[Joseph Sutker]]></name>
@@ -18,13 +18,13 @@
     <link href="http://jsutker.github.io/blog/2015/07/16/fore-an-amateur-code-golf-example/"/>
     <updated>2015-07-16T11:00:20-04:00</updated>
     <id>http://jsutker.github.io/blog/2015/07/16/fore-an-amateur-code-golf-example</id>
-    <content type="html"><![CDATA[<p>Code Golf is not teaching a robot to get angry while swinging an expensive piece of metal at a little, white ball. It&rsquo;s trying to use as few bytes as possible to get an intended outcome. There are certain languages that are built for Code Golf (taking very few bytes to get things done), like GolfScript or Flogscript, but they look absolutely ridiculous.
+    <content type="html"><![CDATA[<p>Code Golf is not teaching a robot to get angry while swinging an expensive piece of metal at a little, white ball. It&rsquo;s trying to use as few bytes as possible to get an intended outcome. There are certain languages that are built for Code Golf (that take very few bytes to get things done), like GolfScript or Flogscript, but they look absolutely ridiculous.
 For example, this GolfScript code prints 1000 digits of pi (source: Wikipedia):
 <code>
 ;''
 6666,-2%{2+.2/@*\/10.3??2*+}*
-`50&lt;~\; #truncate for webpage purposes
- -&gt; 3141592653589793238462643383279502884197169399375
+`1000&lt;~\;
+ -&gt; 3141592653589793238462643383279502884197169399375... etc.
 </code>
 Seriously, how frustrating does that look? Very much so, in my opinion. I prefer Code Golfing with easy to read languages so that programmers can read the lyte code.</p>
 
